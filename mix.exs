@@ -63,8 +63,7 @@ defmodule Sabiah.MixProject do
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
-      clean: ["run -e \"Destroyer.destroy_tweets\""],
-      run: ["phx.server"]
+      clean: ["run -e \"Destroyer.destroy_tweets\""]
     ]
   end
 end
